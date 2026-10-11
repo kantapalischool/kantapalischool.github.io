@@ -1,95 +1,235 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kantapali School</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      color: #1e293b;
-      background: #f1f5f9;
-    }
-    header {
-      background: #14532d;
-      color: white;
-      padding: 22px;
-      text-align: center;
-    }
-    nav {
-      background: #166534;
-      padding: 15px;
-      text-align: center;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 12px;
-    }
-    .hero {
-      padding: 65px 20px;
-      text-align: center;
-      background: #dcfce7;
-    }
-    .hero h1 { color: #14532d; font-size: 38px; }
-    .section {
-      background: white;
-      padding: 28px;
-      margin: 20px auto;
-      max-width: 900px;
-      border-radius: 10px;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #14532d;
-      color: white;
-    }
-  </style>
+  <title>Karlajori-Antapali Govt. U.P. School | Home</title>
+  <meta name="description" content="Official website of Karlajori-Antapali Govt. U.P. School, Odisha. Established in 1946.">
+  <link rel="icon" type="image/png" href="favicon.png">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
-    <h2>Kantapali School</h2>
-    <p>Learning Today, Leading Tomorrow</p>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-info">
+        <span class="top-info-item"><i class="fa-solid fa-location-dot"></i> K. Antapali, Odisha, India</span>
+        <span class="top-info-item"><i class="fa-solid fa-phone"></i> <a href="tel:9776878078">+91 97768 78078</a></span>
+        <span class="top-info-item"><i class="fa-solid fa-envelope"></i> <a href="mailto:kantapalischool@gmail.com">kantapalischool@gmail.com</a></span>
+      </div>
+      <div>
+        <span class="top-badge"><i class="fa-solid fa-clock"></i> School Hours: 9:00 AM - 4:00 PM</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header & Navigation -->
+  <header class="main-header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="brand" aria-label="Karlajori-Antapali Govt U.P. School Home">
+          <img src="images/logo.png" alt="Karlajori-Antapali Govt U.P. School Logo" class="brand-logo">
+          <div class="brand-text">
+            <h1>K. Antapali School</h1>
+            <p>Govt. U.P. School &bull; Estd. 1946</p>
+          </div>
+        </a>
+
+        <!-- Hamburger Button for Mobile -->
+        <button class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <!-- Main Menu -->
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link active"><i class="fa-solid fa-house"></i> Home</a></li>
+          <li><a href="staff.html" class="nav-link"><i class="fa-solid fa-chalkboard-user"></i> Staff</a></li>
+          <li><a href="gallery.html" class="nav-link"><i class="fa-solid fa-images"></i> Gallery</a></li>
+          <li><a href="students.html" class="nav-link"><i class="fa-solid fa-user-graduate"></i> Students</a></li>
+          <li><a href="contact.html" class="nav-link"><i class="fa-solid fa-address-book"></i> Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About Us</a>
-    <a href="#updates">Updates</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <!-- Main Content -->
+  <main class="container">
 
-  <section class="hero" id="home">
-    <h1>Welcome to Kantapali School</h1>
-    <p>Discover our education, activities and achievements.</p>
-  </section>
+    <!-- School Banner Image -->
+    <div class="school-banner-wrap">
+      <img src="images/school-gate.jpg" alt="Karlajori-Antapali Govt. U.P. School Entrance" class="school-banner-img">
+      <div class="school-banner-overlay">
+        <span style="background: rgba(245, 158, 11, 0.25); color: var(--accent); padding: 4px 14px; border-radius: 9999px; font-size: 0.82rem; font-weight: 700; text-transform: uppercase; display: inline-block; width: fit-content; margin-bottom: 0.75rem;">
+          Estd. 1946 &bull; Government U.P. School
+        </span>
+        <h2 class="school-banner-title">Karlajori-Antapali Govt. U.P. School</h2>
+        <p class="school-banner-subtitle">
+          ସରକାରୀ ଉଚ୍ଚ ପ୍ରାଥମିକ ବିଦ୍ୟାଳୟ, କର୍ଲାଜୋରୀ-ଅନ୍ତପାଲି &bull; ଶ୍ରେଣୀ: ପ୍ରଥମ ରୁ ଅଷ୍ଟମ
+        </p>
+      </div>
+    </div>
 
-  <section class="section" id="about">
-    <h2>About Our School</h2>
-    <p>Add your school's history, mission and introduction here.</p>
-  </section>
+    <!-- About School Overview Section (Outside the Grid) -->
+    <div class="home-about-intro">
+      <span class="section-tag" style="width: fit-content; margin-bottom: 0.5rem;">About Our School</span>
+      <h2 style="font-size: 1.85rem; color: var(--dark); margin-bottom: 0.85rem;">Government Upper Primary School, Karlajori Antapali</h2>
+      <p style="color: var(--text-main); font-size: 1.05rem; line-height: 1.75; margin: 0;">
+        Government Upper Primary School, Karlajori Antapali, established in 1946, is committed to providing quality, inclusive, and value-based education. We promote digital learning, creativity, scientific thinking, and holistic development to nurture confident, responsible, and future-ready citizens. Together, we strive to make our school a centre of excellence and innovation.
+      </p>
+    </div>
 
-  <section class="section" id="updates">
-    <h2>Latest Updates</h2>
-    <p>School announcements and upcoming events will appear here.</p>
-  </section>
+    <!-- Two-Column Section: School Overview (Listing) + Headmaster (HM) -->
+    <div class="home-main-grid">
 
-  <section class="section" id="gallery">
-    <h2>School Gallery</h2>
-    <p>Add photos of school activities, students and events here.</p>
-  </section>
+      <!-- Left Column: School Information Listing -->
+      <div class="school-info-card">
+        <span class="section-tag" style="width: fit-content;">School Profile</span>
+        <h3 style="font-size: 1.5rem; color: var(--dark); margin-bottom: 0.35rem;">Key Institutional Details</h3>
+        <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">
+          Classes, administration, and student facilities.
+        </p>
 
-  <section class="section" id="contact">
-    <h2>Contact Us</h2>
-    <p>Kantapali School, Odisha, India.</p>
-  </section>
+        <ul class="info-list">
+          <li class="info-list-item">
+            <div class="info-list-icon"><i class="fa-solid fa-school"></i></div>
+            <div class="info-list-text">
+              <h4>Institution Name</h4>
+              <p>Karlajori-Antapali Govt. U.P. School (ସରକାରୀ ଉଚ୍ଚ ପ୍ରାଥମିକ ବିଦ୍ୟାଳୟ)</p>
+            </div>
+          </li>
 
-  <footer>
-    <p>© 2026 Kantapali School</p>
+          <li class="info-list-item">
+            <div class="info-list-icon"><i class="fa-solid fa-calendar-check"></i></div>
+            <div class="info-list-text">
+              <h4>Year of Establishment</h4>
+              <p>1946 (Over 75+ Years of Educational Service)</p>
+            </div>
+          </li>
+
+          <li class="info-list-item">
+            <div class="info-list-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="info-list-text">
+              <h4>Classes Offered</h4>
+              <p>Class I to Class VIII (Primary & Upper Primary Sections)</p>
+            </div>
+          </li>
+
+          <li class="info-list-item">
+            <div class="info-list-icon"><i class="fa-solid fa-building-columns"></i></div>
+            <div class="info-list-text">
+              <h4>Administration & Board</h4>
+              <p>Department of School & Mass Education, Government of Odisha</p>
+            </div>
+          </li>
+
+          <li class="info-list-item">
+            <div class="info-list-icon"><i class="fa-solid fa-book-open"></i></div>
+            <div class="info-list-text">
+              <h4>Medium of Instruction & Motto</h4>
+              <p>Odia Medium &bull; <em>"Learn &bull; Grow &bull; Build a Better Tomorrow" (ଶିକ୍ଷା ହିଁ ଶକ୍ତି)</em></p>
+            </div>
+          </li>
+
+          <li class="info-list-item">
+            <div class="info-list-icon"><i class="fa-solid fa-circle-check"></i></div>
+            <div class="info-list-text">
+              <h4>Key Facilities</h4>
+              <p>Midday Meal Scheme (MDM), Free Textbooks, Smart Digital Class, Safe Drinking Water & Playground</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Right Column: Headmaster (HM) Photo & Details -->
+      <div class="hm-card">
+        <span class="hm-badge"><i class="fa-solid fa-user-tie"></i> Headmaster's Desk</span>
+        
+        <div class="hm-photo-wrap">
+          <img src="images/hm.jpg" alt="Headmaster Sunil Khamari" class="hm-photo-img">
+        </div>
+
+        <h3 class="hm-name">Sunil Khamari</h3>
+        <p class="hm-designation">Headmaster &bull; Karlajori-Antapali Govt. U.P. School</p>
+
+        <div class="hm-quote">
+          "Together, we strive to make our school a centre of excellence and innovation, nurturing every child to become a confident, responsible, and future-ready citizen."
+        </div>
+
+        <div style="margin-top: 1rem; width: 100%; border-top: 1px solid var(--border-subtle); padding-top: 1rem; display: flex; justify-content: space-around; font-size: 0.85rem; color: var(--text-muted);">
+          <span><i class="fa-solid fa-phone" style="color: var(--primary);"></i> +91 97768 78078</span>
+          <span><i class="fa-solid fa-envelope" style="color: var(--primary);"></i> kantapalischool@gmail.com</span>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+            <img src="images/logo.png" alt="Karlajori-Antapali Govt U.P. School Logo" class="footer-logo">
+            <div>
+              <h3 style="margin: 0; font-size: 1.25rem;">Karlajori-Antapali Govt. U.P. School</h3>
+              <p style="margin: 0; font-size: 0.75rem; color: #94a3b8;">Govt. U.P. School &bull; Estd. 1946</p>
+            </div>
+          </div>
+          <p>
+            Providing value-based quality education, moral integrity, and holistic development for students since 1946.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-links-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+            <li><a href="staff.html"><i class="fa-solid fa-chevron-right"></i> Staff</a></li>
+            <li><a href="gallery.html"><i class="fa-solid fa-chevron-right"></i> Gallery</a></li>
+            <li><a href="students.html"><i class="fa-solid fa-chevron-right"></i> Students</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-chevron-right"></i> Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-links-title">School Contact</h4>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Karlajori-Antapali Nodal Bidyalaya, K. Antapali, Odisha, India</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <span><a href="tel:9776878078">+91 97768 78078</a></span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <span><a href="mailto:kantapalischool@gmail.com">kantapalischool@gmail.com</a></span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-clock"></i>
+            <span>Mon - Sat: 9:00 AM - 4:00 PM</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-flex">
+          <p>&copy; 2026 Karlajori-Antapali Govt. U.P. School. All Rights Reserved.</p>
+          <p>Karlajori-Antapali, Odisha</p>
+        </div>
+      </div>
+    </div>
   </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
 </body>
 </html>
