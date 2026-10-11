@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -222,3 +223,229 @@
   <script src="js/main.js"></script>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo Gallery | K. Antapali School</title>
+  <meta name="description" content="Explore campus photos, annual day celebrations, sports tournaments, and science exhibitions at K. Antapali School.">
+  
+  <link rel="icon" type="image/png" href="favicon.png">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-info">
+        <span class="top-info-item"><i class="fa-solid fa-location-dot"></i> K. Antapali, Odisha, India</span>
+        <span class="top-info-item"><i class="fa-solid fa-phone"></i> +91 97768 78078</span>
+        <span class="top-info-item"><i class="fa-solid fa-envelope"></i> kantapalischool@gmail.com</span>
+      </div>
+      <div>
+        <span class="top-badge"><i class="fa-solid fa-clock"></i> School Hours: 9:00 AM - 4:00 PM</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header & Navigation -->
+  <header class="main-header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="brand" aria-label="K. Antapali School Home">
+          <img src="images/logo.png" alt="K. Antapali Govt U.P. School Logo" class="brand-logo">
+          <div class="brand-text">
+            <h1>K. Antapali School</h1>
+            <p>Govt. U.P. School &bull; Estd. 1946</p>
+          </div>
+        </a>
+
+        <!-- Hamburger Button for Mobile -->
+        <button class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <!-- Main Menu -->
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> Home</a></li>
+          <li><a href="staff.html" class="nav-link"><i class="fa-solid fa-chalkboard-user"></i> Staff</a></li>
+          <li><a href="gallery.html" class="nav-link active"><i class="fa-solid fa-images"></i> Gallery</a></li>
+          <li><a href="students.html" class="nav-link"><i class="fa-solid fa-user-graduate"></i> Students</a></li>
+          <li><a href="contact.html" class="nav-link"><i class="fa-solid fa-address-book"></i> Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <section class="page-hero">
+    <div class="container page-hero-content">
+      <span class="hero-pill"><i class="fa-solid fa-camera-retro"></i> Captured Memories</span>
+      <h1>School Photo & Event Gallery</h1>
+      <p>
+        Vibrant snapshots of life at K. Antapali School — celebrating learning, athletic achievements, and cultural heritage.
+      </p>
+      <div class="breadcrumb-trail">
+        <a href="index.html">Home</a> <span>/</span> <span>Gallery</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="section">
+    <div class="container">
+      
+      <!-- Category Filter Tabs -->
+      <div class="filter-tabs">
+        <button class="filter-btn active" data-filter="all">All Photos</button>
+        <button class="filter-btn" data-filter="events">Events & Celebrations</button>
+        <button class="filter-btn" data-filter="campus">Campus & Inauguration</button>
+        <button class="filter-btn" data-filter="culture">Culture & Dance</button>
+        <button class="filter-btn" data-filter="academics">Drawing & Competitions</button>
+      </div>
+
+      <!-- Photo Grid -->
+      <div class="gallery-grid" id="galleryContainer">
+
+        <!-- Photo 1: Gandhi & Shastri Jayanti -->
+        <div class="gallery-item" data-category="events">
+          <img src="images/gallery-1.jpg" alt="Gandhi Jayanti and Shastri Jayanti Celebration">
+          <div class="gallery-overlay">
+            <span class="gallery-category-badge">Celebration</span>
+            <h4>Gandhi Jayanti & Shastri Jayanti</h4>
+            <p>Commemorating our national leaders with smart digital classroom assembly, teachers, and students.</p>
+          </div>
+        </div>
+
+        <!-- Photo 2: Wildlife Week Painting Competition -->
+        <div class="gallery-item" data-category="academics">
+          <img src="images/gallery-2.jpg" alt="Wildlife Week Drawing Competition">
+          <div class="gallery-overlay">
+            <span class="gallery-category-badge">Competition</span>
+            <h4>Wildlife Week & Painting Competition</h4>
+            <p>Students actively participating in conservation painting organized with Debrigarh Wildlife Sanctuary.</p>
+          </div>
+        </div>
+
+        <!-- Photo 3: Campus Facility Inauguration -->
+        <div class="gallery-item" data-category="campus">
+          <img src="images/gallery-3.jpg" alt="School Facility Ribbon Cutting Ceremony">
+          <div class="gallery-overlay">
+            <span class="gallery-category-badge">Inauguration</span>
+            <h4>School Facility Inauguration</h4>
+            <p>Formal ribbon cutting ceremony with marigold garland, school authorities, and village dignitaries.</p>
+          </div>
+        </div>
+
+        <!-- Photo 4: Sambalpuri Folk Dance Troupe -->
+        <div class="gallery-item" data-category="culture">
+          <img src="images/gallery-4.jpg" alt="Traditional Sambalpuri Folk Dance Performance">
+          <div class="gallery-overlay">
+            <span class="gallery-category-badge">Cultural Dance</span>
+            <h4>Sambalpuri Folk Dance Troupe</h4>
+            <p>Students adorned in exquisite Sambalpuri handloom attire, peacock plumes, and flower baskets.</p>
+          </div>
+        </div>
+
+        <!-- Photo 5: Outdoor Assembly & Felicitation Under Tree -->
+        <div class="gallery-item" data-category="campus">
+          <img src="images/gallery-5.jpg" alt="Outdoor School Felicitation Ceremony">
+          <div class="gallery-overlay">
+            <span class="gallery-category-badge">Campus Event</span>
+            <h4>Outdoor Assembly & Felicitation</h4>
+            <p>Honouring guests and educators with traditional utariya scarves under the campus shade tree.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Interaction Tip -->
+      <div style="margin-top: 3.5rem; background: #ecfdf5; border: 1px solid #a7f3d0; border-radius: var(--radius-md); padding: 1.25rem 1.5rem; display: flex; align-items: center; gap: 1rem;">
+        <div style="font-size: 1.8rem; color: #059669;"><i class="fa-solid fa-expand"></i></div>
+        <div style="font-size: 0.92rem; color: #065f46;">
+          <strong>Interactive Gallery:</strong> Click on any photo to open it in high-resolution full-screen mode with the built-in lightbox viewer.
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Lightbox Modal Container -->
+  <div class="lightbox-modal" id="lightboxModal" role="dialog" aria-modal="true" aria-label="Photo Lightbox">
+    <div class="lightbox-content">
+      <button class="lightbox-close" aria-label="Close Lightbox">&times;</button>
+      <img src="" alt="Enlarged View" class="lightbox-img">
+      <div class="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+            <img src="images/logo.png" alt="Karlajori-Antapali Govt U.P. School Logo" class="footer-logo">
+            <div>
+              <h3 style="margin: 0; font-size: 1.25rem;">Karlajori-Antapali Govt. U.P. School</h3>
+              <p style="margin: 0; font-size: 0.75rem; color: #94a3b8;">Govt. U.P. School &bull; Estd. 1946</p>
+            </div>
+          </div>
+          <p>
+            Providing value-based quality education, moral integrity, and holistic development for students since 1946.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-links-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+            <li><a href="staff.html"><i class="fa-solid fa-chevron-right"></i> Staff</a></li>
+            <li><a href="gallery.html"><i class="fa-solid fa-chevron-right"></i> Gallery</a></li>
+            <li><a href="students.html"><i class="fa-solid fa-chevron-right"></i> Students</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-chevron-right"></i> Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-links-title">School Contact</h4>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Karlajori-Antapali Nodal Bidyalaya, K. Antapali, Odisha, India</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <span><a href="tel:9776878078">+91 97768 78078</a></span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <span><a href="mailto:kantapalischool@gmail.com">kantapalischool@gmail.com</a></span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-clock"></i>
+            <span>Mon - Sat: 9:00 AM - 4:00 PM</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-flex">
+          <p>&copy; 2026 Karlajori-Antapali Govt. U.P. School. All Rights Reserved.</p>
+          <p>Karlajori-Antapali, Odisha</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>
+>>>>>>> 96f0925457f1e81f6097e4dc82ae6228bd8920fe
