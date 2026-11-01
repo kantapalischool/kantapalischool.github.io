@@ -585,8 +585,14 @@ img {
 }
 
 /* -------------------------------------------------------------
-   STAFF PAGE COMPONENTS
+   STAFF PAGE COMPONENTS & RESPONSIVE GRID
    ------------------------------------------------------------- */
+.staff-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.75rem;
+}
+
 .staff-card {
   background: var(--bg-card);
   border-radius: var(--radius-md);
@@ -596,6 +602,7 @@ img {
   box-shadow: var(--shadow-sm);
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 .staff-card:hover {
@@ -607,14 +614,24 @@ img {
 .staff-image-wrap {
   position: relative;
   background: #f1f5f9;
-  height: 285px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
+  aspect-ratio: 3 / 3.8;
+  height: auto;
+  min-height: 250px;
+  display: block;
+  flex-shrink: 0;
   overflow: hidden;
 }
 
+/* Fallback for older browsers without aspect-ratio support */
+@supports not (aspect-ratio: 1 / 1) {
+  .staff-image-wrap {
+    height: 290px;
+  }
+}
+
 .staff-image-wrap img {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -644,6 +661,7 @@ img {
   font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 0.02em;
+  z-index: 2;
 }
 
 .staff-content {
@@ -656,6 +674,7 @@ img {
 .staff-name {
   font-size: 1.25rem;
   margin-bottom: 0.25rem;
+  color: var(--dark);
 }
 
 .staff-designation {
@@ -1524,6 +1543,10 @@ textarea.form-control {
   .home-main-grid {
     grid-template-columns: 1fr;
   }
+  .staff-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
   .grid-4 {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1565,6 +1588,11 @@ textarea.form-control {
     padding: 0.8rem 1rem;
   }
 
+  .staff-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+
   .grid-2, .grid-3, .grid-4 {
     grid-template-columns: 1fr;
   }
@@ -1588,5 +1616,18 @@ textarea.form-control {
 
   .top-bar-content {
     justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .staff-grid {
+    grid-template-columns: 1fr;
+    max-width: 360px;
+    margin: 0 auto;
+    gap: 1.5rem;
+  }
+
+  .staff-content {
+    padding: 1.25rem;
   }
 }
